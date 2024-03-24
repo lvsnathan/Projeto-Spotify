@@ -1,0 +1,203 @@
+html, body, #home{
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+
+body {
+    background: url(imagens/capa.png),
+                url(imagens/ruido.png),
+                linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+nav.navbar-transparente {
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #9bf0e1;
+}
+
+button.navbar-toggler {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
+}
+
+/*Capa*/
+
+.capa {
+    text-align: center;
+}
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+
+
+.btn-roxo {
+    background: #7c26f8;
+    color: white;
+}
+
+.btn-roxo:hover {
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco {
+    border: 2px solid white;
+}
+
+.btn-branco:hover {
+    background: #6207e3;
+    color: white;
+}
+
+/*Estrutura de conteudos*/
+.caixa {
+    padding: 20px 0;
+}
+
+#servicos {
+    background: white;
+}
+
+#servicos h2, h3 {
+    color: #7c25f8;
+}
+
+#recursos h2 {
+    color: white;
+}
+
+#recursos h3 {
+    color: #9bf0e1;
+}
+
+#recursos .text-recursos p {
+    color: white;
+}
+
+.albuns {
+    padding: 10px 0;
+}
+
+.rotacionar {
+    padding-left: 80px;
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg); /*IE 9*/
+    -webkit-transform: rotate(30deg);/* Chrome, Safari, Opera*/
+}
+
+/*Radapé*/
+footer {
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 5px;
+}
+/*Tipografia*/
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+@media (max-width: 576px) {
+    .btn-custom {
+        margin: 10px 15px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+/*// `md` applies to small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .btn-custom {
+        margin: 10px 15px;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    .img-servicos, .img-recursos {
+        display: none;
+    }
+
+
+}
+
+/*// `lg` applies to medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    h1 {
+        font-size: 5em;
+    }
+
+}
+
+/*// `xl` applies to large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    h1 {
+        font-size: 6em;
+    }
+}
